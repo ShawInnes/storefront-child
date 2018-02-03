@@ -31,7 +31,7 @@ class WC_Confirmation_Email extends WC_Email {
 		$this->heading = 'Confirmation - Workshop Details';
 		$this->subject = 'Confirmation - Workshop Details';
 		$this->customer_email = true;
-		$this->template_html  = 'emails/customer-completed-order.php';
+		$this->template_html  = 'emails/customer-confirmation-order.php';
 		$this->template_plain = 'emails/plain/customer-completed-order.php';
 
 		add_action( 'woocommerce_order_status_completed_notification', array( $this, 'trigger' ), 10, 1 );
